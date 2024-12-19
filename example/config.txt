@@ -1,0 +1,2 @@
+Prefix plugins/DimHeatmap/example/
+Plugin DimHeatmap inputfile IRLBA.rds outputfile DimHeatmap.pdf
