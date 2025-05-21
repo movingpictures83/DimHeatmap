@@ -12,6 +12,8 @@ run <- function() {}
 output <- function(outputfile) {
  pdf(outputfile)
 DimHeatmap(pbmc, dims = 1:15, cells = 500, balanced = TRUE)
+#print(str(pbmc))
+write.csv(pbmc@commands$RunPCA.RNA@params$features, paste(outputfile, "csv", sep="."))
 }
 
 
